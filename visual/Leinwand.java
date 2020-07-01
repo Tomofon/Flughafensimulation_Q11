@@ -1,3 +1,5 @@
+package Visual;
+
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Graphics;
@@ -165,6 +167,8 @@ public class Leinwand {
 			graphic.setColor(Color.magenta);
 		} else if (farbname.equals("weiss")) {
 			graphic.setColor(Color.white);
+		} else if (farbname.equals("grau")) {
+			graphic.setColor(Color.gray);
 		} else {
 			graphic.setColor(Color.black);
 		}
