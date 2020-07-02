@@ -45,7 +45,7 @@ public class Leinwand {
 	 */
 	public static Leinwand gibLeinwand() {
 		if (leinwandSingleton == null) {
-			leinwandSingleton = new Leinwand("BlueJ Figuren Demo", 1920, 1080,
+			leinwandSingleton = new Leinwand("Flughafensimulation", 1920, 1080,
 					Color.green);
 		}
 		leinwandSingleton.setzeSichtbarkeit(true);
