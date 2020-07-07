@@ -1,0 +1,5 @@
+#BlueJ class context
+comment0.target=SQLVERBINDUNG
+comment1.params=host\ database\ user\ passwd
+comment1.target=boolean\ connectToMysql(java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String)
+numComments=2
