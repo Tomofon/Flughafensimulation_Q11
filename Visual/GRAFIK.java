@@ -11,4 +11,9 @@ public class GRAFIK {
         flugzeuge[1] = new FLUGZEUG(940, 75);
         flugzeuge[2] = new FLUGZEUG(1275, 75);
     }
+    
+    public void flugzeugZurStartBahnFliegen() {
+        
+    
+    }
 }

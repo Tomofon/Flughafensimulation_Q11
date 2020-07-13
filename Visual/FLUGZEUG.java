@@ -34,6 +34,31 @@ public class FLUGZEUG {
         rechterFleugel =  new Rechteck(70, 25, x+40, y+80, farben[i]);
         linkerFluegel = new Rechteck(70, 25, x-70, y+80, farben[i]);
     }
+    
+    public void flugzeugHorizontalBewegen(int x) {
+        int delta;
+
+        if (x < 0) {
+            delta = -1;
+            x = -x;
+        } else {
+            delta = 1;
+        }
+
+        for (int i = 0; i < x; i++) {
+            rechterFleugel.setX(delta);
+            rechterFleugel.zeichnen();
+            linkerFluegel.setX(delta);
+            linkerFluegel.zeichnen();
+            rumpf.setX(delta);
+            rumpf.zeichnen();
+        }
+        
+    }
+    
+    public void flugzeugVertikalBewegen(int y) {
+        
+    }
 
 
 }
