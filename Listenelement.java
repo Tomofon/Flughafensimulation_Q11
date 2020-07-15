@@ -4,5 +4,7 @@ public abstract class Listenelement
     
     abstract Listenelement gibNaechster();
     
+    abstract Listenelement einfuegen(int nummerNeu,double laengeNeu);
     
+    abstract int durchzaehlen();
 }

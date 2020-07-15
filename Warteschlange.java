@@ -1,33 +1,16 @@
-
-/**
- * Write a description of class Warteschlange here.
- *
- * @author (your name)
- * @version (a version number or a date)
- */
-public class Warteschlange
-{
-    // instance variables - replace the example below with your own
-    private int x;
-
-    /**
-     * Constructor for objects of class Warteschlange
-     */
-    public Warteschlange()
-    {
-        // initialise instance variables
-        x = 0;
+public class Warteschlange {
+ 
+    private Listenelement erster;
+    
+    public Warteschlange() {
+     erster = new Abschluss();   
     }
-
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
+    
+    public void einfuegen(int nummerNeu,double laengeNeu) {
+        erster = erster.einfuegen(nummerNeu,laengeNeu);
+    }
+    
+    public int gibAnzahl() {
+        return erster.durchzaehlen();
     }
 }
